@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "politique",
@@ -6,8 +10,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "7D-kEnYxkBsRkjezsWnZ6u3QAoiMuXQTvo1daaPsNn8",
-        spaceId: "wqbyc2kp0ap6",
+        accessToken: process.env.CONTENTFULL_TOKEN,
+        spaceId: process.env.CONTENTFULL_SPACE_ID,
       },
     },
     "gatsby-plugin-sass",
