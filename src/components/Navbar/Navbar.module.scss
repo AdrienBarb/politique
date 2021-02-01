@@ -1,0 +1,59 @@
+@import '../../styles/variables.scss';
+
+.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 62px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.homeLinks {
+    font-family: "Proxima Bold";
+    font-size: 1.4rem;
+}
+
+.navLinks {
+    font-family: "Proxima Regular";
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-left: 1.4rem;
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &:after {
+            content: '';
+            height: 4px;
+            background-color: $green;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: -2px;
+            right: -2px;
+            opacity: 0;
+            transition: 0.4s opacity;
+        }
+    }
+
+    a:hover {
+        &:after {
+            opacity: 1;
+            transition: 0.4s opacity;
+        }
+    }
+
+
+}
