@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.navButton {
+    color: white;
+    background-color: $green;
+    width: fit-content;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.navButton:hover {
+    cursor: pointer;
+}

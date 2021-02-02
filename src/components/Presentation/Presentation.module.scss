@@ -1,0 +1,28 @@
+.presentationWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.image {
+    width: 400px;
+    margin-right: 2rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-family: 'Proxima Bold';
+}
+
+.subTitle {
+    font-size: 1.2rem;
+    font-family: 'Proxima Bold';
+}
+
+.content {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 1rem 0;
+}
