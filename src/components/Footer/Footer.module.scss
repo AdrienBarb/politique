@@ -17,9 +17,17 @@
     font-family: "Proxima Bold";
     font-size: 1.4rem;
     margin-right: 1rem;
+    @media screen and (max-width: $ms) {
+        display: none;
+    }
 }
 
 img {
     width: 36px;
     margin: 0 0.4rem;
+}
+
+img:hover {
+    cursor: pointer;
+    fill: red;
 }
