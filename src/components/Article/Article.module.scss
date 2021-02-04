@@ -1,0 +1,15 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+}
+
+.title {
+    font-family: 'Proxima Bold';
+    font-size: 1.4rem;
+}
+
+.content {
+    font-size: 1rem;
+    font-weight: 200;
+}

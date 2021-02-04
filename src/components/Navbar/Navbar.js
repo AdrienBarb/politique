@@ -6,7 +6,6 @@ import FullNav from '../FullNav/FullNav'
 
 const Navbar = () => {
     const matches = useMediaQuery('(min-width:768px)');
-    console.log(matches)
 
     let render = null;
     if(!matches) {

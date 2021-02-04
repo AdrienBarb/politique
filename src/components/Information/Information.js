@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import classes from './Information.module.scss'
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby'
 import Img from "gatsby-image"
 
 const Information = () => {
@@ -48,8 +48,6 @@ const Information = () => {
       'image': query.allContentfulInformationPrincipale.edges[0].node.image,
     })
   }, [])
-
-  console.log(data)
 
     return (
         <div className={classes.informationWrapper}>
