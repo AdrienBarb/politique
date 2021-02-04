@@ -16,10 +16,10 @@ const Navbar = () => {
     } else {
         render = (
             <div className={classes.navLinks}>
-                <Link to="/actualites" >Actualités</Link>
-                <Link to="/mon-engagement" >Mon Engagement</Link>
-                <Link to="/nous-connaitre" >Nous connaître</Link>
-                <Link to="/me-contacter" >Me contacter</Link>
+                <Link to="/actualites" activeStyle={{ borderBottom: "3px solid #719D69" }}>Actualités</Link>
+                <Link to="/mon-engagement" activeStyle={{ borderBottom: "3px solid #719D69" }}>Mon Engagement</Link>
+                <Link to="/nous-connaitre" activeStyle={{ borderBottom: "3px solid #719D69" }}>Nous connaître</Link>
+                <Link to="/me-contacter" activeStyle={{ borderBottom: "3px solid #719D69" }}>Me contacter</Link>
             </div>
         )
     }

@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.informationWrapper {
+    padding: 4rem 0;
+    display: flex;
+    background-color: $gray;
+}
+
+.informationcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contentWrapper {
+    max-width: 400px;
+
+    .title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        font-family: Proxima Bold;
+    }
+
+    .content {
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+}
+
+.image {
+    width: 500px;
+    margin: 0 !important;
+}
+
+.imageDescription {
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 0.2rem 0 0 0.2rem;
+}

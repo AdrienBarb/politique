@@ -1,9 +1,10 @@
 .presentationWrapper {
-    display: flex;
     align-items: center;
     justify-content: center;
     max-width: 860px;
     margin: 0 auto;
+    height: 100vh;
+    display: flex;
 }
 
 .image {

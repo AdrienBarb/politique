@@ -14,6 +14,7 @@
     box-sizing: border-box;
     font-size: 1.2rem;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .homeLinks {
@@ -34,25 +35,10 @@
         display: flex;
         align-items: center;
 
-        &:after {
-            content: '';
-            height: 4px;
-            background-color: $green;
-            display: block;
-            position: absolute;
-            bottom: 0px;
-            left: -2px;
-            right: -2px;
-            opacity: 0;
-            transition: 0.4s opacity;
-        }
     }
 
     a:hover {
-        &:after {
-            opacity: 1;
-            transition: 0.4s opacity;
-        }
+        border-bottom: 3px solid $green;
     }
 
 }
