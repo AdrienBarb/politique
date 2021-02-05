@@ -54,7 +54,7 @@ const LastArticles = () => {
 
     return (
         <div className={classes.articlesSection}>
-            {render}
+                {render}
         </div>
     )
 }

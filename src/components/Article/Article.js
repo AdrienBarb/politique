@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './Article.module.scss'
 import styled from 'styled-components'
 import Moment from 'moment';
+import NavButton from '../NavButton/NavButton'
 
 const Article = (props) => {
     const date = Moment(props.data.createdAt ? props.data.createdAt : null).format('DD/MM/YYYY')
@@ -32,6 +33,7 @@ const Article = (props) => {
                     {description}
                 </div>
             </div>
+            <NavButton>Voir l'article</NavButton>
             
         </div>
     )
