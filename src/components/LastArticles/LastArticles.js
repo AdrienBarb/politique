@@ -17,7 +17,8 @@ const LastArticles = () => {
             edges {
                 node {
                 titre
-                createdAt
+                createdAt(formatString: "DD/MM/YYYY")
+                contentful_id
                 description
                 {
                     description

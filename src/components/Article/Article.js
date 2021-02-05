@@ -1,12 +1,10 @@
 import React from 'react'
 import classes from './Article.module.scss'
 import styled from 'styled-components'
-import Moment from 'moment';
 import NavButton from '../NavButton/NavButton'
 
 const Article = (props) => {
-    const date = Moment(props.data.createdAt ? props.data.createdAt : null).format('DD/MM/YYYY')
-    const string = props.data.description.description.slice(0, 100)
+    const string = props.data.description.description ? props.data.description.description.slice(0, 100) : null
     const description = string + '...'
 
     const Image = styled.div`
@@ -22,7 +20,7 @@ const Article = (props) => {
             <div className={classes.imageWrapper}>
                 <Image />
                 <div className={classes.date}>
-                    {date}
+                    {props.data.createdAt ? props.data.createdAt : null}
                 </div>
             </div>
             <div className={classes.contentWrapper}>
@@ -33,7 +31,7 @@ const Article = (props) => {
                     {description}
                 </div>
             </div>
-            <NavButton>Voir l'article</NavButton>
+            <NavButton direction={props.data.contentful_id ? props.data.contentful_id : null }>Voir l'article</NavButton>
             
         </div>
     )
