@@ -1,14 +1,13 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import Layout from '../components/Layout/Layout'
 
 const article = ({ data }) => {
     return (
-        <Layout>
+       
             <div>
                 {data.allContentfulArticles.edges[0].node.titre}
             </div>
-        </Layout>
+     
     )
 }
 
