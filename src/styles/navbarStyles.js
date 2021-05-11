@@ -6,10 +6,26 @@ export const StyledNavbar = styled.div`
   left: 0;
   right: 0;
   padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   box-shadow: 2px 0 10px rgb(0 0 0 / 80%);
   font-weight: 800;
   font-size: 1.4rem;
+  z-index: 10000;
+  background-color: white;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .right-links {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    .active {
+      font-weight: 700;
+    }
+  }
 `

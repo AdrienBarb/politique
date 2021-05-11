@@ -12,9 +12,18 @@ export const StyledFooter = styled.div`
   font-weight: 200;
 
   .wrapper {
-    color: white;
     display: flex;
     align-items: center;
+
+    p {
+      margin: 0;
+      color: white;
+      margin-right: 1rem;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   .divider {
@@ -28,7 +37,6 @@ export const StyledFooter = styled.div`
   .iconWrapper {
     display: flex;
     align-items: center;
-    margin-left: 1rem;
   }
 
   a {

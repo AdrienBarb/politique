@@ -19,6 +19,18 @@ export const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
     }
 
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-weight: 100;
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
     a {
         text-decoration: none;
         color: inherit;

@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <div className="wrapper">
-        Nous contacter :
+        <p> Nous contacter :</p>
         <div className="iconWrapper">
           <a href="mailto:voideybarbier2021@gmail.com" target="_blank" rel="noreferrer">
             <img src={email} alt="email" />
@@ -23,7 +23,8 @@ const Footer = () => {
       </div>
       <div className="divider"></div>
       <div className="wrapper">
-        Nous suivre sur les réseaux :
+        <p>Nous suivre sur les réseaux :</p>
+        
         <div className="iconWrapper">
           <a href="https://www.facebook.com/Voidey-Barbier-D%C3%A9partementales-2021-108658781381167" target="_blank" rel="noreferrer">
             <img src={facebook} alt="facebook" />
