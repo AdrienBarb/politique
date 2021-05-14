@@ -1,11 +1,9 @@
 import React from 'react'
 import { StyledMeetingCard } from '../../../styles/meetingCardStyles'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
-import { faClock } from '@fortawesome/free-solid-svg-icons'
 
 const MeetingCard = ({
   title,
+  details,
   date,
   placeName,
   address,
@@ -19,12 +17,16 @@ const MeetingCard = ({
     <StyledMeetingCard>
       <h1>{title}</h1>
       <div className="info">
+      <div className="details">
+          <h2>Détail</h2>
+          <p>{details}</p>
+        </div>
         <div className="date">
-          <FontAwesomeIcon icon={faClock} />
+          <h2>Date</h2>
           <p>{date}</p>
         </div>
         <div className="place">
-          <FontAwesomeIcon icon={faMapMarkerAlt} />
+          <h2>Lieu</h2>
           {online ? (
             <p>En ligne</p>
           ) : (

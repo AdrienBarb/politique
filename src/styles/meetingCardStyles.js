@@ -2,13 +2,11 @@ import styled from 'styled-components'
 
 export const StyledMeetingCard = styled.div`
   width: fit-content;
-  box-shadow: 2px 0 15px rgb(0 0 0 / 20%);
-  padding: 1.4rem;
+  padding: 1.4rem 3rem;
   margin: 1rem 0;
-  text-align: center;
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     @media (max-width: 768px) {
       font-size: 1.4rem;
@@ -18,20 +16,21 @@ export const StyledMeetingCard = styled.div`
   .info {
     margin: 1rem 0;
   }
+  
+  h2 {
+    font-size: 1;
+    font-weight: 400;
+  }
 
   .date,
-  .place {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-size: 1.4rem;
-    @media (max-width: 768px) {
-      font-size: 1rem;
-    }
+  .place,
+  .details {
 
     p {
-      font-size: 1.4rem;
-      margin: 0.6rem 0 0.6rem 0.6rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #C4C4C4;
+      margin: 0.6rem 0 0.6rem 0;
       @media (max-width: 768px) {
         font-size: 1rem;
       }
@@ -43,9 +42,9 @@ export const StyledMeetingCard = styled.div`
     text-align: center;
     padding: 0.6rem 0.4rem;
     display: block;
-    background-color: #719d69;
+    background-color: #C4C4C4;
     box-sizing: border-box;
     font-weight: 500;
-    color: white;
+    color: black;
   }
 `

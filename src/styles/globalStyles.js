@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.6rem;
         margin: 0;
         font-weight: 700;
         @media (max-width: 768px) {
@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 
     h2 {
         font-weight: 100;
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin: 0;
         @media (max-width: 768px) {
             font-size: 1.2rem;
