@@ -4,6 +4,10 @@ export const StyledMeetingCard = styled.div`
   width: fit-content;
   padding: 1.4rem 3rem;
   margin: 1rem 0;
+  @media (max-width: 768px) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 
   h1 {
     font-size: 1.8rem;
@@ -16,21 +20,20 @@ export const StyledMeetingCard = styled.div`
   .info {
     margin: 1rem 0;
   }
-  
+
   h2 {
-    font-size: 1;
+    font-size: 1rem;
     font-weight: 400;
   }
 
   .date,
   .place,
   .details {
-
     p {
       font-size: 1.2rem;
       font-weight: 400;
-      color: #C4C4C4;
-      margin: 0.6rem 0 0.6rem 0;
+      color: #c4c4c4;
+      margin: 0.2rem 0 0.6rem 0;
       @media (max-width: 768px) {
         font-size: 1rem;
       }
@@ -42,7 +45,7 @@ export const StyledMeetingCard = styled.div`
     text-align: center;
     padding: 0.6rem 0.4rem;
     display: block;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     box-sizing: border-box;
     font-weight: 500;
     color: black;

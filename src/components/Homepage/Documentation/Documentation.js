@@ -11,10 +11,10 @@ const Documentation = () => {
       <h2>Téléchargez les documents de la campagne :</h2>
       <div className="documents-wrapper">
         <a href={circulaire} download>
-          <DocumentCard title="Circulaire" date="04/05/2016" />
+          <DocumentCard title="Circulaire" date="14/05/2021" />
         </a>
         <a href={lettre} download>
-          <DocumentCard title="Lettre" date="04/05/2016" />
+          <DocumentCard title="Lettre" date="14/05/2021" />
         </a>
       </div>
     </StyledDocumentation>
