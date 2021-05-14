@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledHomepage = styled.div`
-  img {
+  .image {
     width: 100%;
   }
 `

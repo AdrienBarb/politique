@@ -12,6 +12,7 @@ const FullNav = () => {
 
   const handleAnimation = () => {
     if (isOpen) {
+      setOpen(!isOpen)
       timeline.to(fullNav.current, {
         duration: 0.4,
         opacity: 0,
@@ -22,6 +23,7 @@ const FullNav = () => {
         css: { visibility: 'hidden' },
       })
     } else {
+      setOpen(!isOpen)
       timeline.to(fullNav.current, {
         duration: 0,
         css: { visibility: 'visible' },
@@ -35,19 +37,18 @@ const FullNav = () => {
   }
 
   return (
-    <StyledFullnav 
-// @ts-ignore
-    isOpen={isOpen}>
-      <div
-        className="humburger"
-        
-        onClick={() => handleAnimation()}
-      >
+    <StyledFullnav
+      // @ts-ignore
+      isOpen={isOpen}
+    >
+      <div className="humburger" onClick={() => handleAnimation()}>
         <Hamburger toggled={isOpen} toggle={setOpen} size={20} />
       </div>
       <div className="fullnav-wrapper" ref={fullNav}>
         <div className="fullnav">
-          <Link to="/equipe-de-campagne">Qui sommes nous ?</Link>
+          <Link to="/equipe-de-campagne" onClick={() => handleAnimation()}>
+            Qui sommes nous ?
+          </Link>
         </div>
       </div>
     </StyledFullnav>

@@ -12,7 +12,7 @@ export const StyledDistrict = styled.div`
     place-items: center;
     margin-top: 2rem;
 
-    img {
+    .image {
       max-width: 500px;
     }
   }

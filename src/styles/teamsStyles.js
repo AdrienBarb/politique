@@ -46,10 +46,8 @@ export const StyledTeams = styled.div`
       }
     }
 
-    img {
+    .image {
       max-width: 400px;
-      width: 100%;
-      height: fit-content;
       margin-right: 2rem;
       @media (max-width: 1024px) {
         max-width: 260px;
