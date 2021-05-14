@@ -5,9 +5,12 @@ import { GlobalStyle } from './src/styles/globalStyles'
 
 export const wrapRootElement = ({ element }) => {
   return (
-    <Layout>
-      <GlobalStyle />
-      {element}
-    </Layout>
+    <div>
+      
+    </div>
+    // <Layout>
+    //   <GlobalStyle />
+    //   {element}
+    // </Layout>
   )
 }

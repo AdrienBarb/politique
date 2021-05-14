@@ -35,7 +35,9 @@ const FullNav = () => {
   }
 
   return (
-    <StyledFullnav isOpen={isOpen}>
+    <StyledFullnav 
+// @ts-ignore
+    isOpen={isOpen}>
       <div
         className="humburger"
         
