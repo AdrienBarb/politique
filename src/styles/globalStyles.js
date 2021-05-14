@@ -2,23 +2,46 @@ import styled, { createGlobalStyle } from 'styled-components'
 import { normalize } from 'styled-normalize'
 
 export const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
     ${normalize}
     
     * {
         text-decoration: none;
+        font-family: 'Roboto';
+        color: #323434;
     }
 
     html {
         box-sizing: border-box;
         font-size: 16px;
+        overflow-x: hidden;
     }
 
     body {
         overflow-x: hidden;
-        font-family: 'Roboto';
-        font-weight: 200;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        margin: 0;
+        font-weight: 700;
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 425px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    h2 {
+        font-weight: 100;
+        font-size: 1.6rem;
+        margin: 0;
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 425px) {
+            font-size: 1.2rem;
+        }
     }
 
     a {

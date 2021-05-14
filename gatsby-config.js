@@ -7,6 +7,7 @@ module.exports = {
     title: 'politique',
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -15,5 +16,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto\:100, 300,400,500,700, 800` 
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }
