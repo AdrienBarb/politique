@@ -8,13 +8,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
-    {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        accessToken: process.env.CONTENTFULL_TOKEN,
-        spaceId: process.env.CONTENTFULL_SPACE_ID,
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-google-fonts`,
