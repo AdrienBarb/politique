@@ -3,6 +3,7 @@ import * as React from 'react'
 import landingpage from '../images/landingpage.png'
 import { StyledHomepage } from '../styles/homepageStyles'
 import MeetUs from '../components/Homepage/MeetUs/MeetUs'
+import District from '../components/Homepage/District/District'
 
 
 const IndexPage = () => {
@@ -10,6 +11,7 @@ const IndexPage = () => {
     <StyledHomepage>
       <img src={landingpage} alt="candidats"/>
       <MeetUs />
+      <District />
     </StyledHomepage>
   )
 }
