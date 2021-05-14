@@ -16,24 +16,6 @@ const Documentation = () => {
         <a href={lettre} download>
           <DocumentCard title="Lettre" date="04/05/2016" />
         </a>
-        <a href={circulaire} download>
-          <DocumentCard title="Circulaire" date="04/05/2016" />
-        </a>
-        <a href={lettre} download>
-          <DocumentCard title="Lettre" date="04/05/2016" />
-        </a>
-        <a href={circulaire} download>
-          <DocumentCard title="Circulaire" date="04/05/2016" />
-        </a>
-        <a href={lettre} download>
-          <DocumentCard title="Lettre" date="04/05/2016" />
-        </a>
-        <a href={circulaire} download>
-          <DocumentCard title="Circulaire" date="04/05/2016" />
-        </a>
-        <a href={lettre} download>
-          <DocumentCard title="Lettre" date="04/05/2016" />
-        </a>
       </div>
     </StyledDocumentation>
   )

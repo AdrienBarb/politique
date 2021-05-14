@@ -5,10 +5,14 @@ export const StyledMeetingCard = styled.div`
   box-shadow: 2px 0 15px rgb(0 0 0 / 20%);
   padding: 1.4rem;
   margin: 1rem 0;
+  text-align: center;
 
   h1 {
     font-size: 2rem;
     font-weight: 600;
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
   }
 
   .info {
@@ -20,11 +24,17 @@ export const StyledMeetingCard = styled.div`
     display: flex;
     align-items: center;
     justify-content: start;
-    font-size: 20px;
+    font-size: 1.4rem;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
 
     p {
-      font-size: 18px;
+      font-size: 1.4rem;
       margin: 0.6rem 0 0.6rem 0.6rem;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
   }
 

@@ -24,12 +24,18 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 3rem;
         margin: 0;
         font-weight: 700;
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
     }
 
     h2 {
         font-weight: 100;
         font-size: 2rem;
         margin: 0;
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
     }
 
     a {

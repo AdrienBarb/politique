@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledDocumentCard = styled.div`
-  margin: 1rem 2rem 1rem 0;
+  margin: 0 2rem 2rem 0;
   display: flex;
   width: fit-content;
   padding: 1rem 2rem;
@@ -15,10 +15,16 @@ export const StyledDocumentCard = styled.div`
     h1 {
       font-size: 1.6rem;
       font-weight: 400;
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
     }
 
     h2 {
       font-size: 1rem;
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+      }
     }
   }
 `
