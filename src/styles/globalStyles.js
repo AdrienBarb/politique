@@ -13,10 +13,35 @@ export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
         font-size: 16px;
+        overflow-x: hidden;
     }
 
     body {
         overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        margin: 0;
+        font-weight: 700;
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 425px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    h2 {
+        font-weight: 100;
+        font-size: 1.6rem;
+        margin: 0;
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+        @media (max-width: 425px) {
+            font-size: 1.2rem;
+        }
     }
 
     a {
