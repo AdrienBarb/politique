@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyledDistrict } from '../../../styles/districtStyles'
-// @ts-ignore
-import valentigney from '../../../images/valentigney.jpeg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const District = () => {
   return (
@@ -14,7 +13,11 @@ const District = () => {
         scrambled it to make a type specimen book.
       </h2>
       <div className="image-wrapper">
-        <img src={valentigney} alt="" />
+        <StaticImage
+          src="../../../images/valentigney.jpeg"
+          alt="Canton de Valentigney"
+          className="image"
+        />
       </div>
     </StyledDistrict>
   )

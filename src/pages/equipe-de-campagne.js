@@ -1,13 +1,6 @@
 import React from 'react'
 import { StyledTeams } from '../styles/teamsStyles'
-// @ts-ignore
-import frederic from '../images/frederic.jpg'
-// @ts-ignore
-import nuno from '../images/nuno.jpg'
-// @ts-ignore
-import stephanie from '../images/stephanie.jpg'
-// @ts-ignore
-import martine from '../images/martine.jpg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Teams = () => {
   return (
@@ -15,7 +8,11 @@ const Teams = () => {
       <h1>L’équipe de campagne</h1>
       <div className="team-wrapper">
         <div className="team-card">
-          <img src={martine} alt="Martine Voidey" />
+          <StaticImage
+            src="../images/martine.jpg"
+            alt="Martine Voidey"
+            className="image"
+          />
           <div className="infos">
             <h1>
               Martine <strong>Voidey</strong>
@@ -45,7 +42,11 @@ const Teams = () => {
         </div>
 
         <div className="team-card">
-          <img src={frederic} alt="Frédéric Barbier" />
+          <StaticImage
+            src="../images/frederic.jpg"
+            alt="Frédéric Barbier"
+            className="image"
+          />
           <div className="infos">
             <h1>
               Frédéric <strong>Barbier</strong>
@@ -76,7 +77,11 @@ const Teams = () => {
         </div>
 
         <div className="team-card">
-          <img src={stephanie} alt="Stéphanie BOURQUIN" />
+          <StaticImage
+            src="../images/stephanie.jpg"
+            alt="Stéphanie BOURQUIN"
+            className="image"
+          />
           <div className="infos">
             <h1>
               Stéphanie <strong>BOURQUIN</strong>
@@ -103,7 +108,11 @@ const Teams = () => {
         </div>
 
         <div className="team-card">
-          <img src={nuno} alt="Nuno MADEIRA" />
+          <StaticImage
+            src="../images/nuno.jpg"
+            alt="Nuno MADEIRA"
+            className="image"
+          />
           <div className="infos">
             <h1>
               Nuno <strong>MADEIRA</strong>
