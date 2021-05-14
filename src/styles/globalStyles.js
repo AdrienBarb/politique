@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
         font-size: 16px;
+        overflow-x: hidden;
     }
 
     body {
@@ -20,14 +21,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 0;
         font-weight: 700;
     }
 
     h2 {
         font-weight: 100;
-        font-size: 2.6rem;
+        font-size: 2rem;
         margin: 0;
     }
 
