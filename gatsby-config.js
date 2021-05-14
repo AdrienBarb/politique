@@ -7,6 +7,7 @@ module.exports = {
     title: 'politique',
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-source-contentful',
       options: {

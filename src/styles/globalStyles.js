@@ -20,14 +20,14 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 0;
         font-weight: 700;
     }
 
     h2 {
         font-weight: 100;
-        font-size: 1.6rem;
+        font-size: 2.6rem;
         margin: 0;
     }
 
