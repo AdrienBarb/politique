@@ -15,6 +15,14 @@ export const StyledMeetUs = styled.div`
     bottom: 0px;
   }
 
+  .horizontal-divider {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+  }
+
   .slick-next::before,
   .slick-prev::before {
     color: black !important;

@@ -31,6 +31,7 @@ const MeetUs = () => {
     <StyledMeetUs>
       <h1>Nous rencontrer</h1>
       <h2>Les réunions à venir :</h2>
+      <div className="horizontal-divider"></div>
       <Slider {...settings}>
         {events.map((event, index) => {
           return (
@@ -50,6 +51,7 @@ const MeetUs = () => {
           )
         })}
       </Slider>
+      <div className="horizontal-divider"></div>
     </StyledMeetUs>
   )
 }
@@ -66,8 +68,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: true,
   },
   {
@@ -79,8 +80,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: true,
   },
   {
@@ -92,8 +92,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: true,
   },
   {
@@ -105,8 +104,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: true,
   },
   {
@@ -118,8 +116,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: false,
   },
   {
@@ -131,8 +128,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: true,
   },
   {
@@ -144,8 +140,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: false,
   },
   {
@@ -157,8 +152,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: true,
   },
   {
@@ -170,8 +164,7 @@ const events = [
     address: '6 place Emile Peugeot',
     zipCode: '25700',
     city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
+    link: 'https://www.google.com/maps/dir//google+maps+valentigney+mairie/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4792109f636776b3:0x7ba61981cbbb331?sa=X&ved=2ahUKEwjdq-L0ksvwAhULlhQKHTHmAyUQ9RcwFHoECDsQBA',
     online: true,
   },
 ]

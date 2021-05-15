@@ -27,9 +27,6 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: 768px) {
             font-size: 2rem;
         }
-        @media (max-width: 425px) {
-            font-size: 1.6rem;
-        }
     }
 
     h2 {
@@ -37,10 +34,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1.6rem;
         margin: 0;
         @media (max-width: 768px) {
-            font-size: 1.2rem;
-        }
-        @media (max-width: 425px) {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
     }
 

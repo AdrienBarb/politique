@@ -15,20 +15,16 @@ const MeetingCard = ({
 }) => {
   return (
     <StyledMeetingCard>
-      <h1>{title}</h1>
+      <h1>{date}</h1>
       <div className="info">
-      <div className="details">
-          <h2>Détail</h2>
-          <p>{details}</p>
-        </div>
-        <div className="date">
-          <h2>Date</h2>
-          <p>{date}</p>
+        <div className="event">
+          <h2>Évènement :</h2>
+          <p>{title}</p>
         </div>
         <div className="place">
           <h2>Lieu</h2>
           {online ? (
-            <p>En ligne</p>
+            <p>En ligne (Zoom)</p>
           ) : (
             <p>
               {placeName} <br /> {address}, <br /> {zipCode} {city}{' '}
@@ -36,8 +32,8 @@ const MeetingCard = ({
           )}
         </div>
       </div>
-      <a className="link" href={link}>
-        {labelLink}
+      <a className="link" href={link} target="_blank">
+        {online ? 'Rejoindre la réunion' : 'Me rendre sur place'}
       </a>
     </StyledMeetingCard>
   )
