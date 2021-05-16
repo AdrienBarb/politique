@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledContact = styled.div`
   .contact-wrapper {
     display: flex;
-    margin: 4rem auto;
+    margin: 4rem auto 8rem auto;
     justify-content: space-evenly;
   }
 

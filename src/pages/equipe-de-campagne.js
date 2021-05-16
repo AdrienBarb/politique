@@ -6,7 +6,7 @@ const Teams = () => {
   return (
     <StyledTeams>
       <StaticImage
-        src="../images/team.jpg"
+        src="../images/team.jpeg"
         alt="L'équipe de campagne"
         className="image"
       />
