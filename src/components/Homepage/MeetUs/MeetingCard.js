@@ -22,7 +22,7 @@ const MeetingCard = ({
           <p>{title}</p>
         </div>
         <div className="place">
-          <h2>Lieu</h2>
+          <h2>Lieu :</h2>
           {online ? (
             <p>En ligne (Zoom)</p>
           ) : (

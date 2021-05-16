@@ -17,7 +17,13 @@ const Navbar = () => {
         ) : (
           <div className="right-links">
             <Link to="/equipe-de-campagne" activeClassName="active">
-              Qui sommes nous ?
+              Qui sommes-nous ?
+            </Link>
+            <Link to="/bilan" activeClassName="active">
+              Bilan 2015/2021
+            </Link>
+            <Link to="/notre-projet" activeClassName="active">
+              Notre projet
             </Link>
           </div>
         )}

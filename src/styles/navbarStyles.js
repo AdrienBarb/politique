@@ -27,6 +27,10 @@ export const StyledNavbar = styled.div`
     font-size: 1.2rem;
     font-weight: 400;
 
+    a {
+      margin-left: 2rem;
+    }
+
     .active {
       font-weight: 700;
     }

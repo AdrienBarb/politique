@@ -14,7 +14,7 @@ const Documentation = () => {
           <DocumentCard title="Circulaire" date="14/05/2021" />
         </a>
         <a href={lettre} download>
-          <DocumentCard title="Lettre" date="14/05/2021" />
+          <DocumentCard title="Lettre de candidature" date="14/05/2021" />
         </a>
       </div>
     </StyledDocumentation>

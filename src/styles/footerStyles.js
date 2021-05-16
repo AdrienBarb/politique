@@ -1,55 +1,61 @@
 import styled from 'styled-components'
 
 export const StyledFooter = styled.div`
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 800;
   font-size: 1.4rem;
   background-color: #323434;
   color: white;
   font-weight: 200;
-
-  .wrapper {
-    display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
 
-    p {
-      margin: 0;
+  .footer-section {
+    color: white;
+
+    h3,
+    a {
       color: white;
-      margin-right: 1rem;
+      font-size: 1rem;
+      font-weight: 400;
+    }
 
-      @media (max-width: 768px) {
-        display: none;
+    h3 {
+      margin-top: 0;
+    }
+
+    a {
+      color: #686868;
+      white-space: nowrap;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: white;
       }
+    }
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
   }
 
   .divider {
     width: 1px;
-    height: 40px;
     display: block;
-    background-color: white;
-    margin: 0 2rem;
-  }
-
-  .iconWrapper {
-    display: flex;
-    align-items: center;
-  }
-
-  a {
-    display: grid;
-    place-items: center;
-  }
-
-  img {
-    width: 30px;
-    margin: 0 0.4rem;
-  }
-
-  .phoneIcon {
-    width: 32px;
+    height: 100px;
+    background-color: #5C5C5C;
+    margin: 0 1rem 0 4rem;
+    @media (max-width: 768px) {
+      height: 1px;
+      width: 100px;
+      margin: 2rem 0;
+    }
   }
 `
