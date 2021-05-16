@@ -37,4 +37,5 @@ export const StyledFullnav = styled.div`
   z-index: 40000 !important;
   transform: translateX(+12px);
   color: ${(props) => (props.isOpen ? 'black' : 'white')};
+}
 `

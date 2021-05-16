@@ -32,7 +32,7 @@ const MeetingCard = ({
           )}
         </div>
       </div>
-      <a className="link" href={link} target="_blank">
+      <a className="link" href={link} target="_blank" rel="noreferrer">
         {online ? 'Rejoindre la réunion' : 'Me rendre sur place'}
       </a>
     </StyledMeetingCard>

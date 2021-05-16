@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h2 {
-        font-weight: 100;
+        font-weight: 400;
         font-size: 1.6rem;
         margin: 0;
         @media (max-width: 768px) {
