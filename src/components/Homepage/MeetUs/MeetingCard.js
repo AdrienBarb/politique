@@ -22,7 +22,7 @@ const MeetingCard = ({
           <p>{title}</p>
         </div>
         <div className="place">
-          <h2>Lieu</h2>
+          <h2>Lieu :</h2>
           {online ? (
             <p>En ligne (Zoom)</p>
           ) : (
@@ -32,7 +32,7 @@ const MeetingCard = ({
           )}
         </div>
       </div>
-      <a className="link" href={link} target="_blank">
+      <a className="link" href={link} target="_blank" rel="noreferrer">
         {online ? 'Rejoindre la réunion' : 'Me rendre sur place'}
       </a>
     </StyledMeetingCard>

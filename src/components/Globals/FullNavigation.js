@@ -47,7 +47,16 @@ const FullNav = () => {
       <div className="fullnav-wrapper" ref={fullNav}>
         <div className="fullnav">
           <Link to="/equipe-de-campagne" onClick={() => handleAnimation()}>
-            Qui sommes nous ?
+            Qui sommes-nous ?
+          </Link>
+          <Link to="/bilan" onClick={() => handleAnimation()}>
+            Bilan 2015/2021
+          </Link>
+          <Link to="/notre-projet" onClick={() => handleAnimation()}>
+            Notre projet
+          </Link>
+          <Link to="/nous-contacter" onClick={() => handleAnimation()}>
+            Nous contacter
           </Link>
         </div>
       </div>
