@@ -5,7 +5,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 const Teams = () => {
   return (
     <StyledTeams>
-      <h1>L’équipe de campagne</h1>
+      <StaticImage
+        src="../images/team.jpg"
+        alt="L'équipe de campagne"
+        className="image"
+      />
+
+      <h1>Les candidats titulaires</h1>
       <div className="team-wrapper">
         <div className="team-card">
           <StaticImage
@@ -75,7 +81,10 @@ const Teams = () => {
             </p>
           </div>
         </div>
+      </div>
 
+      <h1>Les candidats remplaçants</h1>
+      <div className="team-wrapper">
         <div className="team-card">
           <StaticImage
             src="../images/stephanie.jpg"

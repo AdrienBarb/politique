@@ -51,7 +51,7 @@ export const StyledFooter = styled.div`
     display: block;
     height: 100px;
     background-color: #5C5C5C;
-    margin: 0 1rem 0 4rem;
+    margin: 0 4rem;
     @media (max-width: 768px) {
       height: 1px;
       width: 100px;
