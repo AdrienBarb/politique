@@ -11,5 +11,9 @@ export const StyledContactForm = styled.div`
     border: none;
     padding: 0.4rem;
     margin-top: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 `

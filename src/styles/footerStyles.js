@@ -2,16 +2,21 @@ import styled from 'styled-components'
 
 export const StyledFooter = styled.div`
   padding: 2rem 4rem;
-  display: flex;
-  font-weight: 800;
-  font-size: 1.4rem;
   background-color: #323434;
-  color: white;
-  font-weight: 200;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  .footer-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 200;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   .footer-section {
@@ -38,7 +43,6 @@ export const StyledFooter = styled.div`
       }
     }
 
-
     ul {
       margin: 0;
       padding: 0;
@@ -50,7 +54,7 @@ export const StyledFooter = styled.div`
     width: 1px;
     display: block;
     height: 100px;
-    background-color: #5C5C5C;
+    background-color: #5c5c5c;
     margin: 0 4rem;
     @media (max-width: 768px) {
       height: 1px;

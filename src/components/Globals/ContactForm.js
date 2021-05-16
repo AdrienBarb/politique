@@ -6,6 +6,12 @@ import { Box } from '@material-ui/core'
 import { StyledContactForm } from '../../styles/contactFormStyles'
 
 const ContactForm = ({ setFormSubmission }) => {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   const validationSchema = yup.object({
     email: yup
       .string()
@@ -26,6 +32,12 @@ const ContactForm = ({ setFormSubmission }) => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...values })
+      })
+
       setFormSubmission(true)
     },
   })
