@@ -20,6 +20,9 @@ const Footer = () => {
           <li>
             <Link to="/notre-projet">Notre projet</Link>
           </li>
+          <li>
+            <Link to="/nous-contacter">Nous contacter</Link>
+          </li>
         </ul>
       </div>
       <span className="divider"></span>
