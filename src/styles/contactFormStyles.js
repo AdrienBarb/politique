@@ -14,6 +14,7 @@ export const StyledContactForm = styled.div`
 
     &:hover {
       cursor: pointer;
+      opacity: 0.9;
     }
   }
 `

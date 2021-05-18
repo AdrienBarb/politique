@@ -4,12 +4,16 @@ import * as yup from 'yup'
 import TextField from '@material-ui/core/TextField'
 import { Box } from '@material-ui/core'
 import { StyledContactForm } from '../../styles/contactFormStyles'
+import { useSnackbar } from 'notistack'
 
 const ContactForm = ({ setFormSubmission }) => {
+  const { enqueueSnackbar } = useSnackbar()
   const encode = (data) => {
     return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&')
   }
 
   const validationSchema = yup.object({
@@ -31,14 +35,24 @@ const ContactForm = ({ setFormSubmission }) => {
       message: '',
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      // fetch("/", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      //   body: encode({ "form-name": "contact", ...values })
-      // })
-
-      setFormSubmission(true)
+    onSubmit: (values, actions) => {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...values }),
+      })
+        .then(() => {
+          enqueueSnackbar('Le message a bien été envoyé.', {
+            variant: 'success',
+          })
+          actions.resetForm()
+        })
+        .catch(() => {
+          enqueueSnackbar('Une erreur est servenu.', {
+            variant: 'error',
+          })
+        })
+        .finally(() => actions.setSubmitting(false))
     },
   })
 

@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const StyledLanding = styled.div`
   margin: 0 auto;
-
+  max-width: 1200px;
+  
   .image {
     width: fit-content;
     margin: 0 auto;

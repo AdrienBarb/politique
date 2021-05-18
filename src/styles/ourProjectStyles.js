@@ -4,11 +4,6 @@ export const StyledOurProject = styled.div`
   h1 {
     margin-bottom: 3rem;
   }
-  
-  h2 {
-    text-decoration: underline;
-    text-decoration-color: #719d69;
-  }
 
   .section {
     margin-bottom: 2rem;

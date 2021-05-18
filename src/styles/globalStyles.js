@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     * {
         text-decoration: none;
         font-family: 'Roboto';
-        color: #323434;
     }
 
     html {
@@ -18,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         overflow-x: hidden;
+        color: #323434;
     }
 
     h1 {
