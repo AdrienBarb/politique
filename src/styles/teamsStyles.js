@@ -26,8 +26,7 @@ export const StyledTeams = styled.div`
   .team-card {
     width: 100%;
 
-    h1 {
-      font-size: 1.8rem;
+    h2 {
       margin-top: 1rem;
       font-weight: 300;
 

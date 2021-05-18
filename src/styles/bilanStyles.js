@@ -12,6 +12,7 @@ export const StyledBilan = styled.div`
 
   p {
     margin-top: 0.4rem;
+    font-size: 1.2rem;
   }
 
   .section {

@@ -5,6 +5,18 @@ export const StyledContact = styled.div`
     display: flex;
     margin: 4rem auto 8rem auto;
     justify-content: space-evenly;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  .left-side {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .right-side {
+    flex: 1 0 auto;
   }
 
   .section {
