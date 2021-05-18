@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     * {
         text-decoration: none;
         font-family: 'Roboto';
-        color: #323434;
     }
 
     html {
@@ -18,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         overflow-x: hidden;
+        color: #323434;
     }
 
     h1 {
@@ -34,12 +34,12 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1.6rem;
         margin: 0;
         @media (max-width: 768px) {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: 300;
         @media (max-width: 768px) {
           font-size: 1rem;

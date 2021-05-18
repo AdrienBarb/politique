@@ -20,9 +20,9 @@ const Teams = () => {
             className="image"
           />
           <div className="infos">
-            <h1>
+            <h2>
               Martine <strong>Voidey</strong>
-            </h1>
+            </h2>
             <p>
               J’ai 61 ans, je suis maman de deux grands fils et mamie d’une
               petite-fille. <br /> Enseignante à la retraite, j’ai exercé toute
@@ -54,9 +54,9 @@ const Teams = () => {
             className="image"
           />
           <div className="infos">
-            <h1>
+            <h2>
               Frédéric <strong>Barbier</strong>
-            </h1>
+            </h2>
             <p>
               Agé de 60 ans, père de deux grands garçons, j’ai eu la chance de
               m’épanouir professionnellement au sein d’Enedis-GRDF, entreprise
@@ -74,6 +74,11 @@ const Teams = () => {
               Je m’applique également à préserver et à défendre notre
               environnement, notre socle républicain et notre modèle social à la
               française.
+              <br />
+              Je me présente à cette élection avec l’investiture de «
+              Territoires de Progrès », parti social-réformiste de gauche dont
+              j’ai contribué à la création en 2020 aux côtés des ministres
+              Jean-Yves Le Drian et Olivier Dussopt.
               <br /> Cherchant à rassembler autour des valeurs d’humanisme, de
               fraternité, d’authenticité, de partage et de respect, ma
               détermination et ma motivation à servir l’intérêt général restent
@@ -92,9 +97,9 @@ const Teams = () => {
             className="image"
           />
           <div className="infos">
-            <h1>
+            <h2>
               Stéphanie <strong>BOURQUIN</strong>
-            </h1>
+            </h2>
             <p>
               J’ai 46 ans, je suis pacsée et maman de deux collégiens. J’ai
               débuté ma carrière d’infirmière en 1998 et j’exerce comme cadre
@@ -123,9 +128,9 @@ const Teams = () => {
             className="image"
           />
           <div className="infos">
-            <h1>
+            <h2>
               Nuno <strong>MADEIRA</strong>
-            </h1>
+            </h2>
             <p>
               J’ai 45 ans, je suis natif de Seloncourt où j’ai grandi. Après des
               études à Besançon, j’habite depuis 21 ans à Mandeure, avec ma

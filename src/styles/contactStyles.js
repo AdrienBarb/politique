@@ -3,8 +3,16 @@ import styled from 'styled-components'
 export const StyledContact = styled.div`
   .contact-wrapper {
     display: flex;
-    margin: 4rem auto 8rem auto;
+    margin: 4rem auto 4rem auto;
     justify-content: space-evenly;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  .left-side {
+    max-width: 300px;
+    width: 100%;
   }
 
   .section {

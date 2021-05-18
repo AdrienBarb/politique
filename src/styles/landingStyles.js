@@ -2,6 +2,20 @@ import styled from 'styled-components'
 
 export const StyledLanding = styled.div`
   margin: 0 auto;
+  max-width: 1200px;
+  
+  .image {
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+  }
+
+  p {
+    font-size: 1.6rem;
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+  }
 
   .introduction {
     margin: 2rem auto;
