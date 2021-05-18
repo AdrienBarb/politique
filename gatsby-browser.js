@@ -1,5 +1,5 @@
 import React from 'react'
-import { SnackbarProvider, useSnackbar } from 'notistack';
+import { SnackbarProvider } from 'notistack'
 import Layout from './src/components/Layout/Layout'
 import { GlobalStyle } from './src/styles/globalStyles'
 
