@@ -28,11 +28,11 @@ const District = () => {
             départementale du canton de Valentigney et Frédéric Barbier le
             conseiller départemental du canton de Pont de Roide - Vermondans.
             Réélus en binôme lors des élections de mars 2015 sur ce nouveau
-            canton, ils sont candidats à leur succession, tous deux originaires
-            sont du canton (Martine de voujeaucourt et Frédéric de Pont de Roide
-            - Vermondans), ils forment pour cette élection une équipe avec
-            Stéphanie BOURQUIN conseillère municipale de Valentigney et Nuno
-            MADEIRA candidat aux élections municipales 2020 à Mandeure.
+            canton, ils sont candidats à leur succession, tous deux sont
+            originaires du canton (Martine de voujeaucourt et Frédéric de Pont
+            de Roide - Vermondans), ils forment pour cette élection une équipe
+            avec Stéphanie BOURQUIN conseillère municipale de Valentigney et
+            Nuno MADEIRA candidat aux élections municipales 2020 à Mandeure.
           </p>
         </div>
         <div className="image-wrapper">
