@@ -29,27 +29,25 @@ const MeetUs = () => {
 
   return (
     <StyledMeetUs>
-      <h1>Nous rencontrer</h1>
-      <h2>Les réunions à venir :</h2>
-      <Slider {...settings}>
-        {events.map((event, index) => {
-          return (
-            <MeetingCard
-              key={index}
-              title={event.title}
-              details={event.details}
-              date={event.date}
-              placeName={event.placeName}
-              address={event.address}
-              zipCode={event.zipCode}
-              city={event.city}
-              link={event.link}
-              labelLink={event.labelLink}
-              online={event.online}
-            />
-          )
-        })}
-      </Slider>
+      <div className="wrapper">
+        <h1>Nous rencontrer</h1>
+        <p>
+          Nous serons présents sur chaque commune et joignable au 06 66 84 50 23
+          pour vous rencontrer lors de nos visites dans le respect des gestes
+          barrières
+        </p>
+        <Slider {...settings}>
+          {events.map((event, index) => {
+            return (
+              <MeetingCard
+                key={index}
+                place={event.place}
+                date={event.date}
+              />
+            )
+          })}
+        </Slider>
+      </div>
     </StyledMeetUs>
   )
 }
@@ -58,120 +56,23 @@ export default MeetUs
 
 const events = [
   {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: true,
+    place: 'Goux les Dambelin',
+    date: 'Vendredi 21 mai de 9H à 10H30'
   },
   {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: true,
+    place: 'Dambelin',
+    date: 'Vendredi 21 mai de 10H30 à 12H30'
   },
   {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: true,
+    place: 'Bourguignon',
+    date: 'Samedi 22 mai de 10H à 12H00'
   },
   {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: true,
+    place: 'Neuchâtel-Urtière',
+    date: 'Samedi 22 mai de 14H à 15H30'
   },
   {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: false,
-  },
-  {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: true,
-  },
-  {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: false,
-  },
-  {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: true,
-  },
-  {
-    title: 'Réunion publique',
-    details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    date: 'Mardi 16 Mai à 20h00',
-    placeName: 'Mairie de Valentigney',
-    address: '6 place Emile Peugeot',
-    zipCode: '25700',
-    city: 'Valentigney',
-    link: 'www.google.com',
-    labelLink: 'Rejoindre la réunion',
-    online: true,
+    place: 'Rémondans-Vaivre',
+    date: 'Samedi 22 mai de 15H30 à 17H00'
   },
 ]

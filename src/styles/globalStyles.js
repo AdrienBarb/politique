@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     * {
         text-decoration: none;
         font-family: 'Roboto';
-        color: #323434;
     }
 
     html {
@@ -18,31 +17,34 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         overflow-x: hidden;
+        color: #323434;
     }
 
     h1 {
-        font-size: 2.6rem;
-        margin: 0;
+        font-size: 2.4rem;
+        margin: 0 0 0.4rem 0;
         font-weight: 700;
         @media (max-width: 768px) {
-            font-size: 2rem;
-        }
-        @media (max-width: 425px) {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     }
 
     h2 {
-        font-weight: 100;
+        font-weight: 400;
         font-size: 1.6rem;
         margin: 0;
         @media (max-width: 768px) {
-            font-size: 1.2rem;
-        }
-        @media (max-width: 425px) {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
     }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
 
     a {
         text-decoration: none;

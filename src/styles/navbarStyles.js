@@ -11,6 +11,9 @@ export const StyledNavbar = styled.div`
   font-size: 1.4rem;
   z-index: 10000;
   background-color: white;
+  @media (max-width: 768px) {
+    padding: 0.4rem 2rem;
+  }
 
   .navbar {
     display: flex;
@@ -21,8 +24,12 @@ export const StyledNavbar = styled.div`
   }
 
   .right-links {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
+
+    a {
+      margin-left: 2rem;
+    }
 
     .active {
       font-weight: 700;

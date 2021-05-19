@@ -1,25 +1,28 @@
 import React from 'react'
 import { StyledTeams } from '../styles/teamsStyles'
-// @ts-ignore
-import frederic from '../images/frederic.jpg'
-// @ts-ignore
-import nuno from '../images/nuno.jpg'
-// @ts-ignore
-import stephanie from '../images/stephanie.jpg'
-// @ts-ignore
-import martine from '../images/martine.jpg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Teams = () => {
   return (
     <StyledTeams>
-      <h1>L’équipe de campagne</h1>
+      <StaticImage
+        src="../images/team.jpeg"
+        alt="L'équipe de campagne"
+        className="image"
+      />
+
+      <h1>Les candidats titulaires</h1>
       <div className="team-wrapper">
         <div className="team-card">
-          <img src={martine} alt="Martine Voidey" />
+          <StaticImage
+            src="../images/martine.jpg"
+            alt="Martine Voidey"
+            className="image"
+          />
           <div className="infos">
-            <h1>
+            <h2>
               Martine <strong>Voidey</strong>
-            </h1>
+            </h2>
             <p>
               J’ai 61 ans, je suis maman de deux grands fils et mamie d’une
               petite-fille. <br /> Enseignante à la retraite, j’ai exercé toute
@@ -45,11 +48,15 @@ const Teams = () => {
         </div>
 
         <div className="team-card">
-          <img src={frederic} alt="Frédéric Barbier" />
+          <StaticImage
+            src="../images/frederic.jpg"
+            alt="Frédéric Barbier"
+            className="image"
+          />
           <div className="infos">
-            <h1>
+            <h2>
               Frédéric <strong>Barbier</strong>
-            </h1>
+            </h2>
             <p>
               Agé de 60 ans, père de deux grands garçons, j’ai eu la chance de
               m’épanouir professionnellement au sein d’Enedis-GRDF, entreprise
@@ -67,6 +74,11 @@ const Teams = () => {
               Je m’applique également à préserver et à défendre notre
               environnement, notre socle républicain et notre modèle social à la
               française.
+              <br />
+              Je me présente à cette élection avec l’investiture de «
+              Territoires de Progrès », parti social-réformiste de gauche dont
+              j’ai contribué à la création en 2020 aux côtés des ministres
+              Jean-Yves Le Drian et Olivier Dussopt.
               <br /> Cherchant à rassembler autour des valeurs d’humanisme, de
               fraternité, d’authenticité, de partage et de respect, ma
               détermination et ma motivation à servir l’intérêt général restent
@@ -74,13 +86,20 @@ const Teams = () => {
             </p>
           </div>
         </div>
+      </div>
 
+      <h1>Les candidats remplaçants</h1>
+      <div className="team-wrapper">
         <div className="team-card">
-          <img src={stephanie} alt="Stéphanie BOURQUIN" />
+          <StaticImage
+            src="../images/stephanie.jpg"
+            alt="Stéphanie BOURQUIN"
+            className="image"
+          />
           <div className="infos">
-            <h1>
+            <h2>
               Stéphanie <strong>BOURQUIN</strong>
-            </h1>
+            </h2>
             <p>
               J’ai 46 ans, je suis pacsée et maman de deux collégiens. J’ai
               débuté ma carrière d’infirmière en 1998 et j’exerce comme cadre
@@ -103,11 +122,15 @@ const Teams = () => {
         </div>
 
         <div className="team-card">
-          <img src={nuno} alt="Nuno MADEIRA" />
+          <StaticImage
+            src="../images/nuno.jpg"
+            alt="Nuno MADEIRA"
+            className="image"
+          />
           <div className="infos">
-            <h1>
+            <h2>
               Nuno <strong>MADEIRA</strong>
-            </h1>
+            </h2>
             <p>
               J’ai 45 ans, je suis natif de Seloncourt où j’ai grandi. Après des
               études à Besançon, j’habite depuis 21 ans à Mandeure, avec ma

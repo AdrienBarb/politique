@@ -8,14 +8,17 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-source-contentful',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        accessToken: process.env.CONTENTFULL_TOKEN,
-        spaceId: process.env.CONTENTFULL_SPACE_ID,
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
