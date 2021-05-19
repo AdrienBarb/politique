@@ -5,7 +5,7 @@ import FullNav from '../../Globals/FullNavigation'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 const Navbar = () => {
-  const matches = useMediaQuery('(max-width:768px)')
+  const matches = useMediaQuery('(max-width:1024px)')
   return (
     <StyledNavbar>
       <div className="navbar">
@@ -24,6 +24,9 @@ const Navbar = () => {
             </Link>
             <Link to="/notre-projet" activeClassName="active">
               Notre projet
+            </Link>
+            <Link to="/galerie-photos" activeClassName="active">
+              Galerie photos
             </Link>
             <Link to="/nous-contacter" activeClassName="active">
               Nous contacter
