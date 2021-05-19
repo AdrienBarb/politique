@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const StyledTeams = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
 
   h1 {
     margin-bottom: 1rem;
@@ -29,7 +30,6 @@ export const StyledTeams = styled.div`
     h2 {
       margin-top: 1rem;
       font-weight: 300;
-
     }
   }
 `

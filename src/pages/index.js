@@ -10,7 +10,7 @@ const IndexPage = () => {
   return (
     <StyledHomepage>
       <Landing />
-      {/* <MeetUs /> */}
+      <MeetUs />
       <District />
       <Documentation />
     </StyledHomepage>
