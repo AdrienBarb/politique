@@ -6,7 +6,11 @@ import { GlobalStyle } from '../../styles/globalStyles'
 
 const Layout = (props) => {
   return (
-    <StyledLayout>
+    <StyledLayout
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.6 }}
+    >
       <GlobalStyle />
       <Navbar />
       <main>{props.children}</main>
