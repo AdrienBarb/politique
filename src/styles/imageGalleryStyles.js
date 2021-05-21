@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+
 export const StyledImageGallery = styled.div`
   max-width: 1400px;
   margin: 0 auto;
@@ -20,8 +21,21 @@ export const StyledImageGallery = styled.div`
       grid-template-columns: 1fr;
     }
 
-    img {
+    .image-wrapper {
+      overflow: hidden;
+      height: 500px;
+      position: relative;
+      opacity: 0.8;
+    }
+
+    .gatsby-image-wrapper {
       cursor: pointer;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: 150%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 `

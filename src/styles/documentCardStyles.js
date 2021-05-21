@@ -13,7 +13,7 @@ export const StyledDocumentCard = styled.div`
     margin-left: 1rem;
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       font-weight: 400;
       @media (max-width: 768px) {
         font-size: 1rem;
@@ -21,10 +21,16 @@ export const StyledDocumentCard = styled.div`
     }
 
     h2 {
-      font-size: 1rem;
+      font-size: 0.8rem;
+      color: #686868;
       @media (max-width: 768px) {
         font-size: 0.6rem;
       }
     }
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 20%);
+    cursor: pointer;
   }
 `

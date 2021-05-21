@@ -1,9 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { StyledOurProject } from '../styles/ourProjectStyles'
 
 const OurProject = () => {
   return (
     <StyledOurProject>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>VoideyBarbier | Notre projet</title>
+      </Helmet>
       <h1>Notre projet</h1>
       <div className="section">
         <h2>

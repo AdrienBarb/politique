@@ -1,7 +1,10 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const StyledDistrict = styled.div`
+export const StyledDistrict = styled(motion.div)`
   margin: 6rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
   @media (max-width: 768px) {
     margin: 4rem 0;
   }
@@ -45,12 +48,12 @@ export const StyledDistrict = styled.div`
     place-items: center;
     @media (max-width: 1024px) {
       margin-top: 1rem auto 0 auto;
-      max-width: 450px;
+      max-width: 420px;
       width: 100%;
     }
 
     .image {
-      max-width: 500px;
+      max-width: 420px;
     }
   }
 `
