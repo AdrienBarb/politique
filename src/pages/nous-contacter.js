@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import ContactForm from '../components/Globals/ContactForm'
 import SucessAlert from '../components/Globals/SucessAlert'
 import { StyledContact } from '../styles/contactStyles'
@@ -7,6 +8,10 @@ const Contact = () => {
   const [formSubmission, setFormSubmission] = useState(false)
   return (
     <StyledContact>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>VoideyBarbier | Nous contacter</title>
+      </Helmet>
       <h1>Une question ? Contactez nous !</h1>
       <div className="contact-wrapper">
         <div className="left-side">

@@ -4,19 +4,17 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'politique',
+    title: `Élections départementales 2021`,
+    description: `Présentation des candidats Frédéric Barbier et Martine Voidey pour les élections départementales du 20 et 27 Juin 2021.`,
+    author: `Adrien Barbier`,
+    keywords: `politique, élection, départementales, valentigney`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        ssr: true
-      },
-    },
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

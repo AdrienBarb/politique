@@ -45,12 +45,12 @@ export const StyledDistrict = styled.div`
     place-items: center;
     @media (max-width: 1024px) {
       margin-top: 1rem auto 0 auto;
-      max-width: 450px;
+      max-width: 420px;
       width: 100%;
     }
 
     .image {
-      max-width: 500px;
+      max-width: 420px;
     }
   }
 `
