@@ -4,7 +4,11 @@ import { StyledLanding } from '../../../styles/landingStyles'
 
 const Landing = () => {
   return (
-    <StyledLanding>
+    <StyledLanding
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1 }}
+    >
       <StaticImage
         src="../../../images/landing-v2.png"
         alt="Candidats"

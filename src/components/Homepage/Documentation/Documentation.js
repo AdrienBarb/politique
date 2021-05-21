@@ -8,7 +8,11 @@ import DocumentCard from './DocumentCard'
 
 const Documentation = () => {
   return (
-    <StyledDocumentation>
+    <StyledDocumentation
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1 }}
+    >
       <h1>Documentation</h1>
       <div className="documents-wrapper">
         <a href={circulaire} download>

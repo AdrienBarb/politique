@@ -1,9 +1,13 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const StyledDocumentation = styled.div`
-  margin: 4rem auto 2rem auto;
+export const StyledDocumentation = styled(motion.div)`
+  margin: 4rem auto 0 auto;
   padding: 0 2rem;
   max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media (max-width: 768px) {
     margin: 2rem 0;
   }

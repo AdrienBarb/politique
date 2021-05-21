@@ -1,7 +1,10 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const StyledDistrict = styled.div`
+export const StyledDistrict = styled(motion.div)`
   margin: 6rem 0;
+  max-width: 1400px;
+  margin: 0 auto;
   @media (max-width: 768px) {
     margin: 4rem 0;
   }

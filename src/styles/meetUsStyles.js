@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const StyledMeetUs = styled.div`
+export const StyledMeetUs = styled(motion.div)`
   background-color: #f7f7f7;
   margin: 4rem 0;
   padding: 2rem 0;
