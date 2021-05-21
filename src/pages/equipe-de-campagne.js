@@ -1,10 +1,15 @@
 import React from 'react'
 import { StyledTeams } from '../styles/teamsStyles'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Helmet } from 'react-helmet'
 
 const Teams = () => {
   return (
     <StyledTeams>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>VoideyBarbier | Candidats</title>
+      </Helmet>
       <StaticImage
         src="../images/team.jpeg"
         alt="L'équipe de campagne"

@@ -39,11 +39,7 @@ const MeetUs = () => {
         <Slider {...settings}>
           {events.map((event, index) => {
             return (
-              <MeetingCard
-                key={index}
-                place={event.place}
-                date={event.date}
-              />
+              <MeetingCard key={index} place={event.place} date={event.date} />
             )
           })}
         </Slider>
@@ -56,23 +52,15 @@ export default MeetUs
 
 const events = [
   {
-    place: 'Goux les Dambelin',
-    date: 'Vendredi 21 mai de 9H à 10H30'
-  },
-  {
-    place: 'Dambelin',
-    date: 'Vendredi 21 mai de 10H30 à 12H30'
-  },
-  {
     place: 'Bourguignon',
-    date: 'Samedi 22 mai de 10H à 12H00'
+    date: 'Samedi 22 mai de 10H à 12H00',
   },
   {
     place: 'Neuchâtel-Urtière',
-    date: 'Samedi 22 mai de 14H à 15H30'
+    date: 'Samedi 22 mai de 14H à 15H30',
   },
   {
     place: 'Rémondans-Vaivre',
-    date: 'Samedi 22 mai de 15H30 à 17H00'
+    date: 'Samedi 22 mai de 15H30 à 17H00',
   },
 ]

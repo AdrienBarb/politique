@@ -1,4 +1,3 @@
-import { PlaceTwoTone } from '@material-ui/icons'
 import React from 'react'
 import { StyledMeetingCard } from '../../../styles/meetingCardStyles'
 

@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const StyledLayout = styled.div`
+export const StyledLayout = styled(motion.div)`
   main {
     padding: 6rem 0 2rem 0;
 

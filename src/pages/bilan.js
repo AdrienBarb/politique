@@ -1,9 +1,14 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { StyledBilan } from '../styles/bilanStyles'
 
 const Bilan = () => {
   return (
     <StyledBilan>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>VoideyBarbier | Bilan</title>
+      </Helmet>
       <h1>Le bilan de nos actions</h1>
       <div className="section">
         <h2>Pour nos concitoyens</h2>
