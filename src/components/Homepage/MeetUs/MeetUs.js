@@ -28,11 +28,7 @@ const MeetUs = () => {
   }
 
   return (
-    <StyledMeetUs
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1 }}
-    >
+    <StyledMeetUs>
       <div className="wrapper">
         <h1>Nous rencontrer</h1>
         <p>
@@ -55,14 +51,6 @@ const MeetUs = () => {
 export default MeetUs
 
 const events = [
-  {
-    place: 'Goux les Dambelin',
-    date: 'Vendredi 21 mai de 9H à 10H30',
-  },
-  {
-    place: 'Dambelin',
-    date: 'Vendredi 21 mai de 10H30 à 12H30',
-  },
   {
     place: 'Bourguignon',
     date: 'Samedi 22 mai de 10H à 12H00',

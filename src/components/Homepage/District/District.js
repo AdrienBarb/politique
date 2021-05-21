@@ -4,11 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const District = () => {
   return (
-    <StyledDistrict
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1 }}
-    >
+    <StyledDistrict>
       <span className="divider"></span>
       <div className="container">
         <div className="district-details">

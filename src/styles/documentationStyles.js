@@ -1,7 +1,6 @@
-import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const StyledDocumentation = styled(motion.div)`
+export const StyledDocumentation = styled.div`
   margin: 4rem auto 0 auto;
   padding: 0 2rem;
   max-width: 1400px;

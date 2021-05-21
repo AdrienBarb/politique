@@ -11,7 +11,10 @@ const ImageGallery = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { sourceInstanceName: { eq: "gallery" } }) {
+      allFile(
+        filter: { sourceInstanceName: { eq: "gallery" } }
+        sort: {order: DESC, fields: birthtime}
+      ) {
         nodes {
           id
           childImageSharp {
