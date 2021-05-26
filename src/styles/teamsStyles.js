@@ -8,6 +8,7 @@ export const StyledTeams = styled.div`
   h1 {
     margin-bottom: 1rem;
     margin-top: 4rem;
+    text-align: center;
   }
 
   .image {
