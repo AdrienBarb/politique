@@ -25,6 +25,9 @@ const Navbar = () => {
             <Link to="/notre-projet" activeClassName="active">
               Notre projet
             </Link>
+            <Link to="/actualite" activeClassName="active">
+              L'actualité
+            </Link>
             <Link to="/galerie-photos" activeClassName="active">
               Galerie photos
             </Link>

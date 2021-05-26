@@ -20,9 +20,9 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/notre-projet">Notre projet</Link>
-            </li>
             <li>
-              <Link to="/galerie-photos">Galerie photos</Link>
+              <Link to="/actualite">L'actualité</Link>
+            </li>
             </li>
             <li>
               <Link to="/nous-contacter">Nous contacter</Link>

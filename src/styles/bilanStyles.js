@@ -7,6 +7,7 @@ export const StyledBilan = styled.div`
   
   h1 {
     margin-bottom: 3rem;
+    text-align: center;
   }
 
   p {

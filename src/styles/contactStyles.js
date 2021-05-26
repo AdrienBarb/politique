@@ -13,6 +13,10 @@ export const StyledContact = styled.div`
     }
   }
 
+  h1 {
+    text-align: center;
+  }
+
   .left-side {
     max-width: 300px;
     width: 100%;
@@ -23,7 +27,7 @@ export const StyledContact = styled.div`
   }
 
   h2 {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: bold;
   }

@@ -14,7 +14,7 @@ const IndexPage = () => {
         <title>VoideyBarbier | Accueil</title>
       </Helmet>
       <Landing />
-      <MeetUs />
+      {/* <MeetUs /> */}
       <District />
       <Documentation />
     </StyledHomepage>
