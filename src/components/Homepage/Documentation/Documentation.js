@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyledDocumentation } from '../../../styles/documentationStyles'
 // @ts-ignore
-import circulaire from '../../../images/affiche-barbier-voidey.pdf'
+import circulaire from '../../../images/affiche.jpeg'
 // @ts-ignore
 import lettre from '../../../images/lettre.pdf'
 import DocumentCard from './DocumentCard'

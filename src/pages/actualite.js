@@ -9,7 +9,7 @@ const actualite = () => {
         <meta charSet="utf-8" />
         <title>VoideyBarbier | Actualité</title>
       </Helmet>
-      <h1>L'ACTUALITÉ</h1>
+      <h1>L' ACTUALITÉ</h1>
       <div className="iframe-wrapper">
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVoidey-Barbier-D%25C3%25A9partementales-2021-108658781381167&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
