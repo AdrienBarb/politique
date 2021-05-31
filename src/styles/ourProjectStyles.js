@@ -6,6 +6,7 @@ export const StyledOurProject = styled.div`
   padding: 0 2rem;
   h1 {
     margin-bottom: 3rem;
+    text-align: center;
   }
 
   .section {

@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <StyledLanding>
       <StaticImage
-        src="../../../images/landing-v2.png"
+        src="../../../images/bamdeau.jpg"
         alt="Candidats"
         className="image"
       />

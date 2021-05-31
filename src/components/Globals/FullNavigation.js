@@ -55,6 +55,9 @@ const FullNav = () => {
           <Link to="/notre-projet" onClick={() => handleAnimation()}>
             Notre projet
           </Link>
+          <Link to="/actualite" onClick={() => handleAnimation()}>
+            L' actualité
+          </Link>
           <Link to="/galerie-photos" onClick={() => handleAnimation()}>
             Galerie photos
           </Link>
