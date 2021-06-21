@@ -5,11 +5,11 @@ import { StyledMaintenance } from './src/styles/maintenanceStyles'
 
 export const wrapRootElement = ({ element }) => {
   return (
-    <StyledMaintenance>
-      Site temporairement indisponible
-    </StyledMaintenance>
-    // <Layout>
-    //   <SnackbarProvider maxSnack={3}>{element}</SnackbarProvider>
-    // </Layout>
+    // <StyledMaintenance>
+    //   Site temporairement indisponible
+    // </StyledMaintenance>
+    <Layout>
+      <SnackbarProvider maxSnack={3}>{element}</SnackbarProvider>
+    </Layout>
   )
 }
