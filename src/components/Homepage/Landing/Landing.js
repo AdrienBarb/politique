@@ -32,6 +32,11 @@ const Landing = () => {
           général, de votre intérêt. <span className="quote">"</span>
         </p>
       </div>
+      <StaticImage
+        src="../../../images/bandeau-vert.png"
+        alt="Candidats"
+        className="image-bandeau"
+      />
     </StyledLanding>
   )
 }
