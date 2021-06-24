@@ -20669,15 +20669,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
 /* harmony import */ var _src_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/components/Layout/Layout */ "./src/components/Layout/Layout.js");
+/* harmony import */ var _src_styles_maintenanceStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/styles/maintenanceStyles */ "./src/styles/maintenanceStyles.js");
+
 
 
 
 const wrapRootElement = ({
   element
 }) => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(notistack__WEBPACK_IMPORTED_MODULE_1__.SnackbarProvider, {
-    maxSnack: 3
-  }, element));
+  return (
+    /*#__PURE__*/
+    // <StyledMaintenance>Site temporairement indisponible</StyledMaintenance>
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_components_Layout_Layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(notistack__WEBPACK_IMPORTED_MODULE_1__.SnackbarProvider, {
+      maxSnack: 3
+    }, element))
+  );
 };
 
 /***/ }),
@@ -21232,6 +21238,25 @@ __webpack_require__.r(__webpack_exports__);
 const StyledLayout = (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.default)(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.div).withConfig({
   displayName: "layoutStyles__StyledLayout"
 })(["main{padding:6rem 0 2rem 0;@media (max-width:768px){padding:6rem 1rem 2rem 1rem;}}"]);
+
+/***/ }),
+
+/***/ "./src/styles/maintenanceStyles.js":
+/*!*****************************************!*\
+  !*** ./src/styles/maintenanceStyles.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "StyledMaintenance": () => (/* binding */ StyledMaintenance)
+/* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+const StyledMaintenance = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({
+  displayName: "maintenanceStyles__StyledMaintenance"
+})(["margin:30vh auto 0 auto;max-width:600px;width:100%;text-align:center;font-size:3rem;"]);
 
 /***/ }),
 

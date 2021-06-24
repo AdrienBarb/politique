@@ -8,6 +8,10 @@ import lettre from '../../../images/lettre.pdf'
 import ensemble from '../../../images/ensemble.pdf'
 // @ts-ignore
 import reason from '../../../images/4-bonnes-raisons-de-voter-Barbier-Voidey.pdf'
+// @ts-ignore
+import mobilisation from '../../../images/mobilisation.pdf'
+// @ts-ignore
+import circulaireDeuxieme from '../../../images/circulaire-deuxieme.pdf'
 import DocumentCard from './DocumentCard'
 
 const Documentation = () => {
@@ -23,6 +27,12 @@ const Documentation = () => {
         </a>
         <a href={reason} download>
           <DocumentCard title="4 bonnes raisons de voter Martine Voidey et Frédéric Barbier" date="17/06/2021" />
+        </a>
+        <a href={mobilisation} download>
+          <DocumentCard title="Mobilisation pour le 2ème tour" date="17/06/2021" />
+        </a>
+        <a href={circulaireDeuxieme} download>
+          <DocumentCard title="Circulaire de 2ème tour" date="17/06/2021" />
         </a>
       </div>
     </StyledDocumentation>
