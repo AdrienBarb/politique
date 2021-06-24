@@ -11,6 +11,13 @@ export const StyledLanding = styled.div`
     display: block;
   }
 
+  .image-bandeau {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+    display: block;
+  }
+
   p {
     font-size: 1.6rem;
     @media (max-width: 768px) {
